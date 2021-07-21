@@ -1,0 +1,76 @@
+.carousel {
+    padding: 81px 0;
+    position: relative;
+    &__inner {
+        width: 800px;
+        margin: 0 auto;
+        img {
+            width: 130px;
+            height: 130px;
+        }
+    .slick-prev {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: -66px;
+        background-color: #fff;
+        border: none;
+        img {
+            height: 50px;
+            width: 31px;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+    .slick-next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: -66px;
+        background-color: #fff;
+        border: none;
+        img {
+            height: 50px;
+            width: 31px;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}
+@media (max-width: 992px) {
+    .carousel {
+        &__inner {
+            width: auto;
+            display: flex;
+            justify-content: space-around;
+            margin: 0 auto;
+            padding-left: 50px;
+            flex-direction: row;
+            flex-wrap: wrap;
+            img {
+                width: 120px;
+                height: 120px;
+            }
+        }   
+    }
+}
+@media (max-width: 480px) {
+.carousel {
+    &__inner {
+        max-width: 380px;
+        display: flex;
+        justify-content: space-around;
+        margin: 0 auto;
+        padding-left: 20px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        img {
+            width: 100px;
+            height: 100px;
+        }
+    }
+}
+}
+}

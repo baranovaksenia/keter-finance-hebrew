@@ -1,0 +1,117 @@
+.consultation {
+    margin: 0 auto;
+    height: 680px;
+    padding: 100px 0 92px 0;
+    background: url(../img/background2.jpg) center (center/cover) no-repeat;
+    &__descr {
+        font-size: 20px;
+        font-weight: 300;
+        color: #fff;
+        margin: 20px 0 30px 0;
+        text-align: center;
+    }
+    &__policy {
+        width: 350px;
+        font-size: 14px;
+        align-items: center;
+        display: flex;
+        justify-content: flex-end;
+        margin: 0 auto;
+        margin-top: 20px;
+        input {
+            margin-left: 10px;
+        }
+        a {
+            margin-right: 5px;
+        }
+    }
+    .feed-form {
+        margin: 0 auto;
+    }
+    .error {
+        border: 1px solid red;
+    }
+    label.error {
+        color: #fff;
+        border: none;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+}
+@media (max-width: 992px) {
+    .consultation {
+        padding: 50px 0 50px 20px;
+        height: 600px;
+        .title_white {
+            font-size: 20px;
+            width: 400px;
+            margin-bottom: 20px;
+            margin: 0 auto;
+    }
+    &__descr {
+        font-size: 16px;
+    }
+    &__policy {
+        margin-right: 0 auto;
+        margin-top: 10px;
+        font-size: 12px;
+        justify-content: center;
+        input {
+            margin-right: 10px;
+        }
+    }
+    .feed-form {
+        margin-top: 10px;
+        input {
+            height: 40px;
+        }
+    }
+    .button_submit {
+        height: 34px;
+        font-size: 14px;
+    }
+    label.error {
+        font-size: 12px;
+    }
+}
+@media (max-width: 480px) {
+    .consultation {
+        .title_white {
+            font-size: 14px;
+            text-align: center;
+            margin: 0 auto;
+            width: 300px;
+    }
+        &__descr {
+            text-align: center;
+            font-size: 14px;
+            margin: 15px 0 15px 0;
+        }
+        &__policy {
+            width: 300px;
+            margin: 0 auto;
+            margin-top: 10px;
+            font-size: 10px;
+            justify-content: center;
+            align-items: center;
+        input {
+            margin-right: 10px;
+            }
+        }
+        .feed-form {
+            width: 300px;
+            margin-top: 10px;
+            input {
+                height: 35px;
+            }
+        }
+        .button_submit {
+            height: 35px;
+            font-size: 12px;
+        }
+        label.error {
+            font-size: 12px;
+        }
+    }
+}
+}
